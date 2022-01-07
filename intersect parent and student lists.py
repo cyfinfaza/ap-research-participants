@@ -24,11 +24,11 @@ print("Emails")
 emails = []
 for student in parentAndStudent:
     emails.append(
-        student.split("	")[1].lower()
-        + student.split("	")[0].lower()
+        student.split("	")[2].lower()
+        + student.split("	")[1].lower()
         + "@bernardsboe.com"
     )
 print("\n".join(emails))
 
 with open(input("Save as: "), "w") as file:
-    file.write("\n".join(parentAndStudent))
+    file.write("\n".join(emails))
